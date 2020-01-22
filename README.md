@@ -14,5 +14,5 @@ sudo docker build -t nginx-docker .
 
 ## Create docker container using image "nginx-docker"
 ```bat
-sudo docker run --name nginx-container -p 80:80 -d nginx-docker --network nginx-net
+sudo docker run --name nginx-container -p 80:80 --network nginx-net -d nginx-docker 
 ```
