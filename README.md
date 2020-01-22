@@ -9,10 +9,10 @@ sudo docker network create -d bridge nginx-net
 
 ## Build nginx docker image with image name "nginx-docker"
 ```bat
-docker build -t nginx-docker .
+sudo docker build -t nginx-docker .
 ```
 
 ## Create docker container using image "nginx-docker"
 ```bat
-docker run --name nginx-container -p 80:80 -d nginx-docker --network nginx-net
+sudo docker run --name nginx-container -p 80:80 -d nginx-docker --network nginx-net
 ```
