@@ -16,3 +16,9 @@ sudo docker build --no-cache -t nginx-docker .
 ```bat
 sudo docker run --name nginx-container -p 80:80 --network nginx-net -d nginx-docker 
 ```
+
+## Stop and Remove existing docker container
+```bat
+sudo docker container stop nginx-container
+sudo docker container rm nginx-container
+```
