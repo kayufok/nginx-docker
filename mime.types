@@ -1,0 +1,14 @@
+types {
+  text/html                             html htm shtml;
+  text/css                              css;
+  # Images
+  image/bmp                             bmp;
+  image/gif                             gif;
+  image/jpeg                            jpeg jpg;
+  image/png                             png;
+  image/tiff                            tif tiff;
+  image/vnd.wap.wbmp                    wbmp;
+  image/webp                            webp;
+  image/x-icon                          ico cur;
+  image/x-jng                           jng;
+}
