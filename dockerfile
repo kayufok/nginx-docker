@@ -1,7 +1,7 @@
-FROM nginx:alpine
-# COPY index.html /usr/share/nginx/html
+FROM nginx:latest
+
+# Copy nginx config file to /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY mime.types /etc/nginx/mime.types
-COPY static /usr/share/nginx/html
-COPY web /var/www/html/
-COPY web /usr/share/nginx/html/
+
+# Copy sites/ws.kayu.club folder to /var/www
+COPY sites/ws.kayu.club /var/www/ws.kayu.club

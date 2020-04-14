@@ -22,3 +22,16 @@ sudo docker run --name nginx-container -p 80:80 --network nginx-net -d nginx-doc
 sudo docker container stop nginx-container
 sudo docker container rm nginx-container
 ```
+
+### Execute command inside container
+```bat
+sudo docker exec -it nginx-container echo "I'm inside the container!"
+```
+
+### Kill and Deploy command in sequency
+```bat
+sudo docker container stop nginx-container
+sudo docker container rm nginx-container
+sudo docker build --no-cache -t nginx-docker .
+sudo docker run --name nginx-container --network nginx-net -d nginx-docker
+```
